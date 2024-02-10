@@ -30,6 +30,7 @@ public class List implements List301{
         for (int i = 0; i < size(); i++){
             if (arr[i] == x){
                 delete(i);
+                i--;
             }
         }
     }

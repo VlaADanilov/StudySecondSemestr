@@ -4,6 +4,10 @@ package Lesson1;
 // каждый элемент имеет позицию (0 .. )
 
 public interface List301 {
+    int findFirst(int x);
+
+    void deleteAll(int x);
+
     void add(Integer e) throws EmptyElementException;
 
     void delete(int index) throws IndexOutOfBoundsException;

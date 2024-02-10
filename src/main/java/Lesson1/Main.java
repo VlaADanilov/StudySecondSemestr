@@ -4,12 +4,8 @@ import Lesson1.LinkedList.LinkedList;
 
 public class Main {
     public static void main(String[] args) throws EmptyElementException{
-        LinkedList list = new LinkedList();
-        for (int i = 0; i <= 100; i++){
-            list.add(Integer.valueOf(i));
-        }
-        list.pop();
-        list.delete(1);
+        LinkedList list = new LinkedList(new int[]{1,2,3,1,5});
+        list.deleteAll(1);
         System.out.println(list);
         System.out.println();
 

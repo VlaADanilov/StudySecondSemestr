@@ -15,6 +15,41 @@ public class LinkedList implements List301 {
     public LinkedList() {
     }
 
+    public LinkedList(int[] arr){
+        this();
+        len = arr.length;
+        if (arr.length != 0){
+            head = new Element(arr[0]);
+            Element temp = head;
+            for (int i = 1; i < arr.length; i++){
+                temp.next = new Element(arr[i]);
+                temp = temp.next;
+            }
+        }
+
+    }
+
+    public int findFirst(int x) {
+        Element temp = head;
+        for (int i = 0; i < size(); i++){
+            if (temp.value == x){
+                return i;
+            }
+            temp = temp.next;
+        }
+        return -1;
+    }
+
+
+    public void deleteAll(int x) {
+        Element temp = head;
+        for (int i = 0; i < size(); i++){
+            if (temp.value == x){
+                delete(i);
+            }
+        }
+    }
+
     public void add(Integer e) throws EmptyElementException {
         if (e == null){
             throw new EmptyElementException();

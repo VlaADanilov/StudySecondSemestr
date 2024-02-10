@@ -9,6 +9,31 @@ public class List implements List301{
         indexNow = 0;
     }
 
+    public List(int[] array){
+        arr = new Integer[array.length];
+        for (int i = 0; i < array.length; i++){
+            arr[i] = Integer.valueOf(array[i]);
+        }
+        indexNow = arr.length;
+    }
+
+    public int findFirst(int x) {
+        for (int i = 0; i < size(); i++){
+            if (arr[i] == x){
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public void deleteAll(int x) {
+        for (int i = 0; i < size(); i++){
+            if (arr[i] == x){
+                delete(i);
+            }
+        }
+    }
+
     public void add(Integer e) throws EmptyElementException {
         if (e == null){
             throw new EmptyElementException();

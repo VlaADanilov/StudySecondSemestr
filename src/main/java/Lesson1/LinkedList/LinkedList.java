@@ -46,7 +46,9 @@ public class LinkedList implements List301 {
         for (int i = 0; i < size(); i++){
             if (temp.value == x){
                 delete(i);
+                i--;
             }
+            temp = temp.next;
         }
     }
 

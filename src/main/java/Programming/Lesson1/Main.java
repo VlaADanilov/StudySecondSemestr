@@ -1,6 +1,6 @@
-package Lesson1;
+package Programming.Lesson1;
 
-import Lesson1.LinkedList.LinkedList;
+import Programming.Lesson1.LinkedList.LinkedList;
 
 public class Main {
     public static void main(String[] args) throws EmptyElementException{

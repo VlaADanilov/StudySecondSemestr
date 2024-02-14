@@ -1,7 +1,7 @@
-package Lesson1.LinkedList;
+package Programming.Lesson1.LinkedList;
 
-import Lesson1.EmptyElementException;
-import Lesson1.List301;
+import Programming.Lesson1.EmptyElementException;
+import Programming.Lesson1.List301;
 
 public class LinkedList implements List301 {
     private Element head;

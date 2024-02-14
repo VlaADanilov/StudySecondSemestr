@@ -1,4 +1,4 @@
-package Lesson1.LinkedList;
+package Programming.Lesson1.LinkedList;
 
 public class Element {
     public Integer value;

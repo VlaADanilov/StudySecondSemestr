@@ -1,4 +1,4 @@
-package Lesson1;
+package Programming.Lesson1;
 
 // Структура, хранящая однотипные элементы Integer
 // каждый элемент имеет позицию (0 .. )

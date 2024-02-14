@@ -1,4 +1,4 @@
-package Lesson1;
+package Programming.Lesson1;
 
 public class EmptyElementException extends Exception{
 

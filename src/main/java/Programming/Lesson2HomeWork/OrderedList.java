@@ -43,15 +43,17 @@ public class OrderedList<T extends Comparable> extends LinkedList {
                 head = new Element(e);
                 head.next = temp;
             }
-            Element prev = head;
-            do{
-                prev = temp;
-                temp = temp.next;
-            }while (temp != null && e.compareTo(temp.value) == 1);
+            else {
+                Element prev = head;
+                do {
+                    prev = temp;
+                    temp = temp.next;
+                } while (temp != null && e.compareTo(temp.value) == 1);
 
-            Element now = new Element(e);
-            prev.next = now;
-            now.next = temp;
+                Element now = new Element(e);
+                prev.next = now;
+                now.next = temp;
+            }
         }
         len++;
     }

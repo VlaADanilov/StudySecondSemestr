@@ -18,6 +18,10 @@ public class Main {
         ord.add(9999);
         ord.deleteAll(5);
         System.out.println(ord);
-        System.out.println(ord.getIndex(Integer.valueOf(9999)));
+
+        System.out.println(ord.getIndex(9999));
+        ord.add(-115);
+        System.out.println(ord);
+        System.out.println(ord.findFirst(5));
     }
 }

@@ -64,6 +64,7 @@ public class OrderedList<T extends Comparable> extends LinkedList {
             temp = temp.next;
         }
         int index = binaryFing(elems,0,size() - 1, e);
+        if (index == -1) return -1;
         while(index != 0){
             if (!elems[index - 1].equals(elems[index])) break;
             index--;
@@ -74,8 +75,9 @@ public class OrderedList<T extends Comparable> extends LinkedList {
     private int binaryFing(Element[] elems ,int l, int r, T e){
         //O(log n) время
 
-        if (l == r){
-            return l;
+        if (l == r ){
+            if (e.compareTo(elems[l].value) == 0) return l;
+            else return -1;
         }
         int m = l + (r - l) / 2;
         if (e.compareTo(elems[m].value) == -1){

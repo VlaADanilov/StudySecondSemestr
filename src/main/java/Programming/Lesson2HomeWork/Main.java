@@ -17,8 +17,7 @@ public class Main {
         ord.add(8);
         ord.add(9999);
         ord.deleteAll(5);
-        ord.add(Integer.valueOf(99));
         System.out.println(ord);
-        System.out.println(ord.getIndex(Integer.valueOf(5)));
+        System.out.println(ord.getIndex(Integer.valueOf(9999)));
     }
 }

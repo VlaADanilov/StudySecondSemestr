@@ -17,7 +17,7 @@ public abstract class Car extends Transport{
 
     public void printInfo(){
         System.out.println("Car " + company + " " + model + " " + year + " year");
-        System.out.println("Cost = " + cost + ", mileage = " + mileage);
+        System.out.println("Cost = " + cost + "$, mileage = " + mileage);
         System.out.println("Resourse = " + levelResourseToDrive);
         System.out.println("HourePower = " + numberOfHorsepower);
         System.out.println(statement);

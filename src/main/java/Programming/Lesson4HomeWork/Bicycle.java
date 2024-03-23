@@ -14,6 +14,6 @@ public class Bicycle extends NoResourseTransoprt {
     }
 
     public void printInfo(){
-        System.out.println("Bicycle " + name + ", cost = " + cost + ", HorsePower = " + numberOfHorsepower);
+        System.out.println("Bicycle " + name + ", cost = " + cost + "$, HorsePower = " + numberOfHorsepower);
     }
 }

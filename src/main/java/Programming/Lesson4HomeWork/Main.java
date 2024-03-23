@@ -16,13 +16,14 @@ public class Main {
         list.add(pet);
         list.add(by);
         list.add(sc);
-
+        TransoprtsHouse.chippestTransport(list).printInfo();
         TransoprtsHouse.printInfoAboutAllOfThis(list);
 
         List<Car> cars = new ArrayList<>();
         cars.add(el);
         cars.add(di);
         cars.add(pet);
+        TransoprtsHouse.sortCarListByCost(cars);
         TransoprtsHouse.printInfoAboutAllOfThis(cars);
         TransoprtsHouse.allToParking(cars);
 
